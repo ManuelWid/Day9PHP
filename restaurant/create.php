@@ -24,6 +24,7 @@
                     </tr>    
                     <tr>
                         <th>Price</th>
+                        <!-- value is important as if not set and left empty in the form it would throw a fatal error as the query would have an empty spot -->
                         <td><input class='form-control' type="number" name= "price" placeholder="Price" step="any" value=0 /></td>
                     </tr>
                     <tr>

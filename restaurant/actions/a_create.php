@@ -2,7 +2,8 @@
 require_once 'db_connect.php';
 require_once 'file_upload.php';
 
-if ($_POST && !(empty($_POST["name"]))) {   
+if ($_POST && !(empty($_POST["name"]))) { 
+    // the empty() function is used to make sure there is a name, if only ($_POST) and empty name it would throw an error
     $name = $_POST['name'];
     $price = $_POST['price'];
     $desc = $_POST['desc'];
