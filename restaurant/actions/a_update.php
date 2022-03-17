@@ -12,7 +12,7 @@ if ($_POST) {
     $picture = file_upload($_FILES['picture']); 
     if($picture->error===0){
         ($_POST["picture"]=="product.png")?: unlink("../pictures/$_POST[picture]");           
-        $sql = "UPDATE dishes SET name = '$name', price = $price, description='$desc', picture = '$picture->fileName' WHERE dish_id = $id";
+        $sql = "UPDATE dishes SET name = '$name', price = $price, description='$desc', image = '$picture->fileName' WHERE dish_id = $id";
     }else{
         $sql = "UPDATE dishes SET name = '$name', price = $price, description='$desc' WHERE dish_id = $id";
     }    
