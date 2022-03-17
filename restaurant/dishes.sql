@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 17, 2022 at 02:54 PM
+-- Generation Time: Mar 17, 2022 at 03:42 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -36,17 +36,6 @@ CREATE TABLE `dishes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `dishes`
---
-
-INSERT INTO `dishes` (`dish_id`, `image`, `name`, `price`, `description`) VALUES
-(23, '62332a97dae6d.jpg', 'Burger', 122, 'A long description'),
-(24, '62332ac6778b3.jpg', 'dfhgsdgsd', 22, ''),
-(25, 'product.png', 'Burger', 44, 'A long description'),
-(26, '62332cfe02b19.jpg', 'Pizza', 23, 'Still pizza'),
-(28, '62333d2b6a287.jpg', 'Noodles', 44, 'All hail the flying spaghetti monster, ramen!');
-
---
 -- Indexes for dumped tables
 --
 
@@ -64,7 +53,7 @@ ALTER TABLE `dishes`
 -- AUTO_INCREMENT for table `dishes`
 --
 ALTER TABLE `dishes`
-  MODIFY `dish_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `dish_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
